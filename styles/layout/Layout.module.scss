@@ -1,0 +1,15 @@
+@import "../breakpoints";
+
+.layout {
+  padding: 24px 18px;
+  @include respond-above(laptop) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  @include respond-above(max) {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
