@@ -1,0 +1,17 @@
+@import "../breakpoints";
+
+.logo {
+  width: 128px;
+  height: 50px;
+  svg {
+    width: 100%;
+  }
+  @include respond-above(tablet) {
+    width: 200px;
+    height: 100px;
+  }
+  @include respond-above(laptop) {
+    width: 250px;
+    height: 100px;
+  }
+}
