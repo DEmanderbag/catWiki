@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Scale from "../../../components/Scale";
 import Gallery from "../../../components/Gallery";
-import styles from "../../../styles/CatPage.module.scss";
+import styles from "../../../styles/pages/CatPage.module.scss";
 
 export default function cat({ cat, randomBreedImage }) {
   return (

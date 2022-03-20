@@ -3,12 +3,29 @@
   --text-transperent: #190d0499;
   --decoration: #4d270c;
   --background: #e3e1dc;
+  --light: #ffffff;
+  --dark: #000000;
+  --hover: rgba(151, 151, 151, 0.1);
+  --active: #544439;
+  --scale: #e0e0e0;
 
-  --border-radius-sm: 12px;
-  --border-radius-md: 20px;
-  --border-radius-circle: 50%;
-  --size-xs: 0.5rem;
-  --size-sm: 1rem;
-  --size-md: 1.5rem;
-  --size-lg: 2rem;
+  --border-radius-xs: 0.5rem;
+  --border-radius-sm: 0.625rem;
+  --border-radius-md: 0.75rem;
+  --border-radius-lg: 1.5rem;
+  --border-radius-xl: 3.6875rem;
+  --border-radius-xxl: 4.8125rem;
+  --border-radius-30: 1.875rem;
+  --border-radius-42: 2.625rem;
+
+  --size-half: 0.5rem;
+  --size-xs: 0.875rem;
+  --size-1: 1rem;
+  --size-sm: 1.125rem;
+  --size-md: 1.25rem;
+  --size-lg: 1.5rem;
+  --size-xlg: 2rem;
+  --size-xl: 2.25rem;
+  --size-xxl: 2.5rem;
+  --size-xxxl: 2.875rem;
 }

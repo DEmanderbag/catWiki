@@ -3,12 +3,12 @@
   .decoration {
     width: 50px;
     height: 3px;
-    border-radius: 77px;
+    border-radius: var(--border-radius-xxl);
     background-color: var(--decoration);
     margin-bottom: 18px;
   }
   .question {
-    font-size: 40px;
+    font-size: var(--size-xxl);
     margin-bottom: 40px;
     max-width: 15ch;
   }
@@ -28,7 +28,7 @@
   grid-template-rows: 6.5625rem 8.5625rem 6.5625rem;
   gap: 16px;
   &Wrapper {
-    border-radius: 24px;
+    border-radius: var(--border-radius-lg);
     overflow: hidden;
     position: relative;
     &:nth-child(1) {

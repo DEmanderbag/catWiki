@@ -1,0 +1,24 @@
+@import "../breakpoints";
+
+.footer {
+  background-color: var(--dark);
+  border-top-left-radius: var(--border-radius-42);
+  border-top-right-radius: var(--border-radius-42);
+  padding: var(--size-xlg) var(--size-lg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 5rem;
+  color: var(--light);
+  p {
+    padding-top: var(--size-sm);
+    font-size: var(--size-xs);
+  }
+  @include respond-above(tablet) {
+    flex-direction: row;
+    align-items: center;
+    p {
+      padding-top: 0;
+    }
+  }
+}

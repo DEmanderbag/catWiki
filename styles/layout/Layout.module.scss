@@ -1,7 +1,8 @@
 @import "../breakpoints";
 
 .layout {
-  padding: 24px 18px;
+  padding: var(--size-lg) var(--size-sm);
+  padding-bottom: 0;
   height: 100%;
   display: flex;
   flex-direction: column;

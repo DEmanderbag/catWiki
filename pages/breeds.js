@@ -1,6 +1,6 @@
 import Head from "next/head";
 import CatList from "../components/CatList";
-import styles from "../styles/BreedsPage.module.scss";
+import styles from "../styles/pages/BreedsPage.module.scss";
 
 export default function Breeds({ data }) {
   return (

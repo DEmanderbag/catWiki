@@ -2,7 +2,7 @@ import Head from "next/head";
 import BreedsFeed from "../components/BreedsFeed";
 import Hero from "../components/Hero";
 import QuestionSection from "../components/QuestionSection";
-import styles from "../styles/Home.module.scss";
+import styles from "../styles/pages/Home.module.scss";
 
 export default function Home({ data }) {
   const newData = data.slice(17, 21);

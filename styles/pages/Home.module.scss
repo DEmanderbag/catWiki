@@ -1,26 +1,26 @@
-@import "breakpoints";
+@import "../breakpoints";
 
 .hero {
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  padding: 1.5rem 2rem;
-  background-color: #000;
-  background-image: url("../public/HeroImagesm.png");
+  border-top-left-radius: var(--border-radius-30);
+  border-top-right-radius: var(--border-radius-30);
+  padding: var(--size-lg) var(--size-xlg);
+  background-color: var(--dark);
+  background-image: url("../../public/HeroImagesm.png");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
-  color: white;
+  color: var(--light);
   @include respond-above(laptop) {
     padding: 7.1875rem 6.875rem 9.0625rem;
   }
 }
 
 .breedsFeed {
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: var(--border-radius-30);
+  border-bottom-right-radius: var(--border-radius-30);
   background-color: var(--background);
   margin-bottom: 65px;
-  padding: 1.5rem 2rem;
+  padding: var(--size-lg) var(--size-xlg);
   @include respond-above(laptop) {
     padding: 2.5rem 6.875rem;
   }
@@ -30,7 +30,7 @@
   @include respond-above(tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: var(--size-xlg);
   }
   @include respond-above(laptop) {
     padding: 2.5rem 6.875rem;

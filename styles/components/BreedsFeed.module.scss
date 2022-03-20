@@ -2,18 +2,18 @@
 
 .trending {
   font-weight: 500;
-  font-size: 14px;
+  font-size: var(--size-xs);
   margin-bottom: 6px;
   @include respond-above(max) {
-    font-size: 18px;
+    font-size: var(--size-sm);
   }
 }
 .decoration {
   width: 40px;
   height: 3px;
-  border-radius: 77px;
+  border-radius: var(--border-radius-xxl);
   background-color: var(--decoration);
-  margin-bottom: 18px;
+  margin-bottom: var(--size-sm);
 }
 .infoAction {
   margin-bottom: 26px;
@@ -24,17 +24,17 @@
   }
 }
 .info {
-  font-size: 20px;
+  font-size: var(--size-md);
   max-width: 15ch;
-  margin-bottom: 1rem;
+  margin-bottom: var(--size-1);
   @include respond-above(tablet) {
     margin-bottom: 0;
   }
   @include respond-above(max) {
-    font-size: 32px;
+    font-size: var(--size-xlg);
   }
   @include respond-above(max) {
-    font-size: 46px;
+    font-size: var(--size-xxxl);
   }
 }
 .actionLink {
@@ -60,14 +60,14 @@
     width: 100%;
     margin-bottom: 12px;
     span {
-      border-radius: 12px;
+      border-radius: var(--border-radius-md);
     }
   }
   &Name {
     font-weight: 600;
-    font-size: 14px;
+    font-size: var(--size-xs);
     @include respond-above(max) {
-      font-size: 18px;
+      font-size: var(--size-sm);
     }
   }
 }

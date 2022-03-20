@@ -1,9 +1,9 @@
-@import "breakpoints";
+@import "../breakpoints";
 
 .pageUi {
   @include respond-above(laptop) {
     display: grid;
-    gap: 2rem;
+    gap: var(--size-xlg);
     grid-template-columns: 1fr 1fr;
     .gallery {
       grid-column: 1 / -1;
@@ -16,7 +16,7 @@
   margin-bottom: 24px;
   align-self: start;
   span {
-    border-radius: 24px;
+    border-radius: var(--border-radius-lg);
   }
 }
 .catInfo {
@@ -24,24 +24,24 @@
   margin-bottom: 3rem;
   .title {
     font-weight: 600;
-    font-size: 2.25rem;
-    margin-bottom: 2rem;
+    font-size: var(--size-xl);
+    margin-bottom: var(--size-xlg);
   }
   .description {
-    margin-bottom: 1.5rem;
+    margin-bottom: var(--size-lg);
     max-width: 55ch;
   }
   .bold {
     font-weight: 700;
   }
   .data > * {
-    margin-bottom: 1rem;
-    color: #000000;
+    margin-bottom: var(--size-1);
+    color: var(--dark);
     @include respond-above(tablet) {
-      margin-bottom: 1.5rem;
+      margin-bottom: var(--size-lg);
     }
     @include respond-above(laptop) {
-      margin-bottom: 2rem;
+      margin-bottom: var(--size-xlg);
     }
   }
 }

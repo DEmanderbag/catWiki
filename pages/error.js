@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import styles from "../styles/ErrorPage.module.scss";
+import styles from "../styles/pages/ErrorPage.module.scss";
 
 export default function Error() {
   return (
