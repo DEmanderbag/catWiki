@@ -2,6 +2,9 @@
 
 .layout {
   padding: 24px 18px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   @include respond-above(laptop) {
     padding-left: 3rem;
     padding-right: 3rem;

@@ -1,0 +1,16 @@
+@import "../_breakpoints.scss";
+.title {
+  margin-bottom: 0.5rem;
+}
+.message {
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  max-width: 17ch;
+  @include respond-above(tablet) {
+    font-size: 18px;
+    max-width: 25ch;
+  }
+  @include respond-above(laptop) {
+    font-size: 1.5rem;
+  }
+}

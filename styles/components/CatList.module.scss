@@ -1,0 +1,36 @@
+@import "../breakpoints";
+
+.pageGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  @include respond-above(tablet) {
+    gap: 2rem;
+    grid-template-columns: max-content 1fr;
+  }
+  .imageWrapper {
+    span {
+      border-radius: 24px;
+    }
+  }
+  .title {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    @include respond-above(tablet) {
+      font-size: 36px;
+      margin-bottom: 1rem;
+    }
+  }
+  .description {
+    max-width: 60ch;
+    @include respond-above(tablet) {
+      font-size: 18px;
+    }
+  }
+}
+.noImage {
+  width: 200px;
+  height: 200px;
+  border-radius: 24px;
+  background-color: rgba(151, 151, 151, 0.1);
+}

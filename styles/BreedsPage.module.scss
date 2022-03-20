@@ -1,0 +1,12 @@
+@import "breakpoints";
+
+.pageGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+.title {
+  @include respond-above(tablet) {
+    font-size: 36px;
+  }
+}

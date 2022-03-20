@@ -1,0 +1,73 @@
+@import "../breakpoints";
+
+.trending {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 6px;
+  @include respond-above(max) {
+    font-size: 18px;
+  }
+}
+.decoration {
+  width: 40px;
+  height: 3px;
+  border-radius: 77px;
+  background-color: var(--decoration);
+  margin-bottom: 18px;
+}
+.infoAction {
+  margin-bottom: 26px;
+  @include respond-above(tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+.info {
+  font-size: 20px;
+  max-width: 15ch;
+  margin-bottom: 1rem;
+  @include respond-above(tablet) {
+    margin-bottom: 0;
+  }
+  @include respond-above(max) {
+    font-size: 32px;
+  }
+  @include respond-above(max) {
+    font-size: 46px;
+  }
+}
+.actionLink {
+  color: var(--text-transperent);
+  font-weight: 700;
+}
+.previewGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 13px;
+  row-gap: 26px;
+  @include respond-above(tablet) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.card {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  &ImageWrapper {
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 12px;
+    span {
+      border-radius: 12px;
+    }
+  }
+  &Name {
+    font-weight: 600;
+    font-size: 14px;
+    @include respond-above(max) {
+      font-size: 18px;
+    }
+  }
+}
