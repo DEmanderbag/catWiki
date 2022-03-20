@@ -4,9 +4,16 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--size-half);
+  transition: 200ms ease-in background-color;
   @include respond-above(tablet) {
     gap: var(--size-xlg);
     grid-template-columns: max-content 1fr;
+  }
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--hover);
+      border-radius: var(--border-radius-lg);
+    }
   }
   .imageWrapper {
     span {

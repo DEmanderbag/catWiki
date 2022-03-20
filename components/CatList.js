@@ -2,11 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/components/CatList.module.scss";
 
-const CatList = (data) => {
-  const { name, description, image, id } = data.data;
-  let imageData;
-  if (image === undefined || Object.keys(image).length === 0) {
-  } else {
+const CatList = ({ data }) => {
+  const { name, description, image, id } = data;
+  let imageData = "placeholder";
+  if (image !== undefined || Object.keys(!image).length !== 0) {
     imageData = image.url;
   }
   return (
@@ -21,7 +20,7 @@ const CatList = (data) => {
                 src={imageData}
                 alt="Picture of the author"
                 placeholder="blur"
-                blurDataURL={ImageData}
+                blurDataURL={imageData}
                 width={200}
                 height={200}
               />
