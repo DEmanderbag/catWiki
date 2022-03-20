@@ -23,6 +23,7 @@ const CatList = ({ data }) => {
                 blurDataURL={imageData}
                 width={200}
                 height={200}
+                layout="responsive"
               />
             )}
           </div>

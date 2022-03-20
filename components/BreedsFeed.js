@@ -24,8 +24,10 @@ const BreedsFeed = ({ breedsData }) => {
                     alt="Picture of the author"
                     placeholder="blur"
                     blurDataURL={article.image.url}
-                    width={300}
-                    height={300}
+                    layout="fill"
+                    objectFit="cover"
+                    quality={75}
+                    loading="lazy"
                   />
                 </div>
                 <p className={styles.cardName}>{article.name}</p>

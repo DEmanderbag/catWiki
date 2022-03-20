@@ -59,8 +59,13 @@
     overflow: hidden;
     width: 100%;
     margin-bottom: 12px;
+    position: relative;
+    height: 8rem;
     span {
       border-radius: var(--border-radius-md);
+    }
+    @include respond-above(smallTablet) {
+      height: 12rem;
     }
   }
   &Name {

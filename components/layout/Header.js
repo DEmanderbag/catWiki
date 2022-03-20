@@ -8,6 +8,7 @@ const Header = () => {
       <Link href="/">
         <a>
           <Logo color={"var(--text)"} />
+          <span className="sr-only">Go home</span>
         </a>
       </Link>
     </header>
